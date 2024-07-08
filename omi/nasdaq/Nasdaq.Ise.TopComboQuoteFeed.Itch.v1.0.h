@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Nasdaq Ise Itch TopComboQuoteFeed 1.0 protocol
+ * C Structs For Nasdaq Ise Itch TopComboQuoteFeed 1.0 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -9,71 +9,71 @@
 /*
  * Current Trading State Values
  */ 
-#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT = 'H'
-#define ENUM_CURRENT_TRADING_STATE_TRADING_RESUMED = 'T'
+#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT 'H'
+#define ENUM_CURRENT_TRADING_STATE_TRADING_RESUMED 'T'
 
 /*
  * Event Code Values
  */ 
-#define ENUM_EVENT_CODE_START_OF_MESSAGES = 'O'
-#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS = 'S'
-#define ENUM_EVENT_CODE_START_OF_OPENING_PROCESS = 'Q'
-#define ENUM_EVENT_CODE_START_OF_NORMAL_HOURS_CLOSING_PROCESS = 'N'
-#define ENUM_EVENT_CODE_START_OF_LATE_HOURS_CLOSING_PROCESS = 'L'
-#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS = 'E'
-#define ENUM_EVENT_CODE_END_OF_MESSAGES = 'C'
-#define ENUM_EVENT_CODE_END_OF_WCO_EARLY_CLOSING = 'W'
+#define ENUM_EVENT_CODE_START_OF_MESSAGES 'O'
+#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS 'S'
+#define ENUM_EVENT_CODE_START_OF_OPENING_PROCESS 'Q'
+#define ENUM_EVENT_CODE_START_OF_NORMAL_HOURS_CLOSING_PROCESS 'N'
+#define ENUM_EVENT_CODE_START_OF_LATE_HOURS_CLOSING_PROCESS 'L'
+#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS 'E'
+#define ENUM_EVENT_CODE_END_OF_MESSAGES 'C'
+#define ENUM_EVENT_CODE_END_OF_WCO_EARLY_CLOSING 'W'
 
 /*
  * Message Type Values
  */ 
-#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE = 'S'
-#define ENUM_MESSAGE_TYPE_COMPLEX_STRATEGY_DIRECTORY_MESSAGE = 'R'
-#define ENUM_MESSAGE_TYPE_STRATEGY_OPEN_CLOSED_MESSAGE = 'O'
-#define ENUM_MESSAGE_TYPE_STRATEGY_TRADING_ACTION_MESSAGE = 'H'
-#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_BID_AND_ASK_UPDATE = 'C'
-#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_BID_UPDATE = 'D'
-#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_ASK_UPDATE = 'E'
-#define ENUM_MESSAGE_TYPE_COMPLEX_STRATEGY_TICKER_MESSAGE = 't'
+#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE 'S'
+#define ENUM_MESSAGE_TYPE_COMPLEX_STRATEGY_DIRECTORY_MESSAGE 'R'
+#define ENUM_MESSAGE_TYPE_STRATEGY_OPEN_CLOSED_MESSAGE 'O'
+#define ENUM_MESSAGE_TYPE_STRATEGY_TRADING_ACTION_MESSAGE 'H'
+#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_BID_AND_ASK_UPDATE 'C'
+#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_BID_UPDATE 'D'
+#define ENUM_MESSAGE_TYPE_STRATEGY_BEST_ASK_UPDATE 'E'
+#define ENUM_MESSAGE_TYPE_COMPLEX_STRATEGY_TICKER_MESSAGE 't'
 
 /*
  * Open State Values
  */ 
-#define ENUM_OPEN_STATE_OPEN = 'Y'
-#define ENUM_OPEN_STATE_CLOSED = 'N'
+#define ENUM_OPEN_STATE_OPEN 'Y'
+#define ENUM_OPEN_STATE_CLOSED 'N'
 
 /*
  * Option Type Values
  */ 
-#define ENUM_OPTION_TYPE_CALL = 'C'
-#define ENUM_OPTION_TYPE_PUT = 'P'
-#define ENUM_OPTION_TYPE_NA = ' '
+#define ENUM_OPTION_TYPE_CALL 'C'
+#define ENUM_OPTION_TYPE_PUT 'P'
+#define ENUM_OPTION_TYPE_NA ' '
 
 /*
  * Quote Condition Values
  */ 
-#define ENUM_QUOTE_CONDITION_REGULAR_QUOTE = ' '
-#define ENUM_QUOTE_CONDITION_HALTED = 'X'
+#define ENUM_QUOTE_CONDITION_REGULAR_QUOTE ' '
+#define ENUM_QUOTE_CONDITION_HALTED 'X'
 
 /*
  * Side Values
  */ 
-#define ENUM_SIDE_BUY = 'B'
-#define ENUM_SIDE_SELL = 'S'
-#define ENUM_SIDE_HIDDEN = ' '
+#define ENUM_SIDE_BUY 'B'
+#define ENUM_SIDE_SELL 'S'
+#define ENUM_SIDE_HIDDEN ' '
 
 /*
  * Strategy Type Values
  */ 
-#define ENUM_STRATEGY_TYPE_VERTICAL_SPREAD = 'V'
-#define ENUM_STRATEGY_TYPE_TIME_SPREAD = 'T'
-#define ENUM_STRATEGY_TYPE_DIAGONAL_SPREAD = 'D'
-#define ENUM_STRATEGY_TYPE_STRADDLE = 'S'
-#define ENUM_STRATEGY_TYPE_STRANGLE = 'G'
-#define ENUM_STRATEGY_TYPE_COMBO = 'C'
-#define ENUM_STRATEGY_TYPE_RISK_REVERSAL = 'R'
-#define ENUM_STRATEGY_TYPE_RATIO_SPREAD = 'A'
-#define ENUM_STRATEGY_TYPE_CUSTOM = 'U'
+#define ENUM_STRATEGY_TYPE_VERTICAL_SPREAD 'V'
+#define ENUM_STRATEGY_TYPE_TIME_SPREAD 'T'
+#define ENUM_STRATEGY_TYPE_DIAGONAL_SPREAD 'D'
+#define ENUM_STRATEGY_TYPE_STRADDLE 'S'
+#define ENUM_STRATEGY_TYPE_STRANGLE 'G'
+#define ENUM_STRATEGY_TYPE_COMBO 'C'
+#define ENUM_STRATEGY_TYPE_RISK_REVERSAL 'R'
+#define ENUM_STRATEGY_TYPE_RATIO_SPREAD 'A'
+#define ENUM_STRATEGY_TYPE_CUSTOM 'U'
 
 
 /*******************************************************************************
@@ -88,7 +88,7 @@
 typedef struct {
     char Timestamp;
     uint32_t StrategyId;
-    uint64_t LastPrice;
+    int64_t LastPrice;
     uint32_t Size;
     uint32_t Volume;
     uint64_t High;
@@ -104,7 +104,7 @@ typedef struct {
     char Timestamp;
     uint32_t StrategyId;
     char QuoteCondition;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Size;
     uint32_t CustSize;
     uint32_t ProCustSize;
@@ -120,7 +120,7 @@ typedef struct {
     char Timestamp;
     uint32_t StrategyId;
     char QuoteCondition;
-    uint32_t Price;
+    int32_t Price;
     uint32_t Size;
     uint32_t CustSize;
     uint32_t ProCustSize;
@@ -136,14 +136,14 @@ typedef struct {
     char Timestamp;
     uint32_t StrategyId;
     char QuoteCondition;
-    uint32_t BidPrice;
+    int32_t BidPrice;
     uint32_t BidSize;
     uint32_t BidCustSize;
     uint32_t BidProCustSize;
     uint32_t BidNttSize;
     uint32_t BidMarketSize;
     uint32_t BidNttMarketSize;
-    uint32_t AskPrice;
+    int32_t AskPrice;
     uint32_t AskSize;
     uint32_t AskCustSize;
     uint32_t AskProCustSize;
@@ -180,7 +180,7 @@ typedef struct {
     uint8_t ExpirationYear;
     uint8_t ExpirationMonth;
     uint8_t ExpirationDay;
-    uint64_t ExplicitStrikePrice;
+    int64_t ExplicitStrikePrice;
     char OptionType;
     char Side;
     uint32_t LegRatio;

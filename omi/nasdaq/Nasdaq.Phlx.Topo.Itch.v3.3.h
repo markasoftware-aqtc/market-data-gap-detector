@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Nasdaq Phlx Itch Topo 3.3 protocol
+ * C Structs For Nasdaq Phlx Itch Topo 3.3 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -9,78 +9,78 @@
 /*
  * Current Trading State Values
  */ 
-#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT = 'H'
-#define ENUM_CURRENT_TRADING_STATE_TRADING_RESUMED = 'T'
+#define ENUM_CURRENT_TRADING_STATE_HALT_IN_EFFECT 'H'
+#define ENUM_CURRENT_TRADING_STATE_TRADING_RESUMED 'T'
 
 /*
  * Event Code Values
  */ 
-#define ENUM_EVENT_CODE_START_OF_MESSAGES = 'O'
-#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS = 'S'
-#define ENUM_EVENT_CODE_START_OF_OPENING_PROCESS = 'Q'
-#define ENUM_EVENT_CODE_START_OF_NORMAL_HOURS_CLOSING_PROCESS = 'N'
-#define ENUM_EVENT_CODE_START_OF_LATE_HOURS_CLOSING_PROCESS = 'L'
-#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS = 'E'
-#define ENUM_EVENT_CODE_END_OF_MESSAGES = 'C'
-#define ENUM_EVENT_CODE_END_OF_WCO_EARLY_CLOSING = 'W'
+#define ENUM_EVENT_CODE_START_OF_MESSAGES 'O'
+#define ENUM_EVENT_CODE_START_OF_SYSTEM_HOURS 'S'
+#define ENUM_EVENT_CODE_START_OF_OPENING_PROCESS 'Q'
+#define ENUM_EVENT_CODE_START_OF_NORMAL_HOURS_CLOSING_PROCESS 'N'
+#define ENUM_EVENT_CODE_START_OF_LATE_HOURS_CLOSING_PROCESS 'L'
+#define ENUM_EVENT_CODE_END_OF_SYSTEM_HOURS 'E'
+#define ENUM_EVENT_CODE_END_OF_MESSAGES 'C'
+#define ENUM_EVENT_CODE_END_OF_WCO_EARLY_CLOSING 'W'
 
 /*
  * Message Type Values
  */ 
-#define ENUM_MESSAGE_TYPE_TIMESTAMP_MESSAGE = 'T'
-#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE = 'S'
-#define ENUM_MESSAGE_TYPE_OPTIONS_DIRECTORY_MESSAGE = 'D'
-#define ENUM_MESSAGE_TYPE_TRADING_ACTION_MESSAGE = 'H'
-#define ENUM_MESSAGE_TYPE_SECURITY_OPEN_CLOSED_MESSAGE = 'O'
-#define ENUM_MESSAGE_TYPE_SHORT_BEST_BID_AND_ASK_UPDATE_MESSAGE = 'q'
-#define ENUM_MESSAGE_TYPE_LONG_BEST_BID_AND_ASK_UPDATE_MESSAGE = 'Q'
-#define ENUM_MESSAGE_TYPE_SHORT_BEST_ASK_UPDATE_MESSAGE = 'a'
-#define ENUM_MESSAGE_TYPE_SHORT_BEST_BID_UPDATE_MESSAGE = 'b'
-#define ENUM_MESSAGE_TYPE_LONG_BEST_ASK_UPDATE_MESSAGE = 'A'
-#define ENUM_MESSAGE_TYPE_LONG_BEST_BID_UPDATE_MESSAGE = 'B'
-#define ENUM_MESSAGE_TYPE_TRADE_REPORT_MESSAGE = 'R'
-#define ENUM_MESSAGE_TYPE_BROKEN_TRADE_REPORT_MESSAGE = 'X'
+#define ENUM_MESSAGE_TYPE_TIMESTAMP_MESSAGE 'T'
+#define ENUM_MESSAGE_TYPE_SYSTEM_EVENT_MESSAGE 'S'
+#define ENUM_MESSAGE_TYPE_OPTIONS_DIRECTORY_MESSAGE 'D'
+#define ENUM_MESSAGE_TYPE_TRADING_ACTION_MESSAGE 'H'
+#define ENUM_MESSAGE_TYPE_SECURITY_OPEN_CLOSED_MESSAGE 'O'
+#define ENUM_MESSAGE_TYPE_SHORT_BEST_BID_AND_ASK_UPDATE_MESSAGE 'q'
+#define ENUM_MESSAGE_TYPE_LONG_BEST_BID_AND_ASK_UPDATE_MESSAGE 'Q'
+#define ENUM_MESSAGE_TYPE_SHORT_BEST_ASK_UPDATE_MESSAGE 'a'
+#define ENUM_MESSAGE_TYPE_SHORT_BEST_BID_UPDATE_MESSAGE 'b'
+#define ENUM_MESSAGE_TYPE_LONG_BEST_ASK_UPDATE_MESSAGE 'A'
+#define ENUM_MESSAGE_TYPE_LONG_BEST_BID_UPDATE_MESSAGE 'B'
+#define ENUM_MESSAGE_TYPE_TRADE_REPORT_MESSAGE 'R'
+#define ENUM_MESSAGE_TYPE_BROKEN_TRADE_REPORT_MESSAGE 'X'
 
 /*
  * Mpv Values
  */ 
-#define ENUM_MPV_PENNY_EVERYWHERE = 'E'
-#define ENUM_MPV_SCALED = 'S'
-#define ENUM_MPV_PENNY_PILOT = 'P'
+#define ENUM_MPV_PENNY_EVERYWHERE 'E'
+#define ENUM_MPV_SCALED 'S'
+#define ENUM_MPV_PENNY_PILOT 'P'
 
 /*
  * Open State Values
  */ 
-#define ENUM_OPEN_STATE_OPEN_FOR_AUTO_EXECUTION = 'Y'
-#define ENUM_OPEN_STATE_CLOSED_FOR_AUTO_EXECUTION = 'N'
+#define ENUM_OPEN_STATE_OPEN_FOR_AUTO_EXECUTION 'Y'
+#define ENUM_OPEN_STATE_CLOSED_FOR_AUTO_EXECUTION 'N'
 
 /*
  * Option Closing Type Values
  */ 
-#define ENUM_OPTION_CLOSING_TYPE_NORMAL = 'N'
-#define ENUM_OPTION_CLOSING_TYPE_LATE = 'L'
-#define ENUM_OPTION_CLOSING_TYPE_WCO_EARLY_CLOSING = 'W'
+#define ENUM_OPTION_CLOSING_TYPE_NORMAL 'N'
+#define ENUM_OPTION_CLOSING_TYPE_LATE 'L'
+#define ENUM_OPTION_CLOSING_TYPE_WCO_EARLY_CLOSING 'W'
 
 /*
  * Option Type Values
  */ 
-#define ENUM_OPTION_TYPE_CALL = 'C'
-#define ENUM_OPTION_TYPE_PUT = 'P'
+#define ENUM_OPTION_TYPE_CALL 'C'
+#define ENUM_OPTION_TYPE_PUT 'P'
 
 /*
  * Quote Condition Values
  */ 
-#define ENUM_QUOTE_CONDITION_REGULAR_QUOTEAUTOX_ELIGIBLE = ''
-#define ENUM_QUOTE_CONDITION_NON_FIRM_QUOTE = 'F'
-#define ENUM_QUOTE_CONDITION_ROTATIONAL_QUOTE = 'R'
-#define ENUM_QUOTE_CONDITION_BID_SIDE_FIRM = 'X'
-#define ENUM_QUOTE_CONDITION_ASK_SIDE_FIRM = 'Y'
+#define ENUM_QUOTE_CONDITION_REGULAR_QUOTEAUTOX_ELIGIBLE ''
+#define ENUM_QUOTE_CONDITION_NON_FIRM_QUOTE 'F'
+#define ENUM_QUOTE_CONDITION_ROTATIONAL_QUOTE 'R'
+#define ENUM_QUOTE_CONDITION_BID_SIDE_FIRM 'X'
+#define ENUM_QUOTE_CONDITION_ASK_SIDE_FIRM 'Y'
 
 /*
  * Tradable Values
  */ 
-#define ENUM_TRADABLE_TRADABLE = 'Y'
-#define ENUM_TRADABLE_NOT_TRADABLE = 'N'
+#define ENUM_TRADABLE_TRADABLE 'Y'
+#define ENUM_TRADABLE_NOT_TRADABLE 'N'
 
 
 /*******************************************************************************
@@ -96,7 +96,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     uint32_t OriginalCrossId;
-    uint32_t OriginalPrice;
+    int32_t OriginalPrice;
     uint32_t OriginalVolume;
 } BrokenTradeReportMessageT;
 
@@ -108,7 +108,7 @@ typedef struct {
     uint32_t OptionId;
     uint32_t CrossId;
     char TradeCondition[1];
-    uint32_t Price4;
+    int32_t Price4;
     uint32_t Volume;
 } TradeReportMessageT;
 
@@ -119,7 +119,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint32_t Price4;
+    int32_t Price4;
     uint32_t Size4;
 } LongBestBidUpdateMessageT;
 
@@ -130,7 +130,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint32_t Price4;
+    int32_t Price4;
     uint32_t Size4;
 } LongBestAskUpdateMessageT;
 
@@ -141,7 +141,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint16_t Price2;
+    int16_t Price2;
     uint16_t Size2;
 } ShortBestBidUpdateMessageT;
 
@@ -152,7 +152,7 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint16_t Price2;
+    int16_t Price2;
     uint16_t Size2;
 } ShortBestAskUpdateMessageT;
 
@@ -163,9 +163,9 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint32_t BidPrice4;
+    int32_t BidPrice4;
     uint32_t BidSize4;
-    uint32_t AskPrice4;
+    int32_t AskPrice4;
     uint32_t AskSize4;
 } LongBestBidAndAskUpdateMessageT;
 
@@ -176,9 +176,9 @@ typedef struct {
     uint32_t Nanoseconds;
     uint32_t OptionId;
     char QuoteCondition;
-    uint16_t BidPrice2;
+    int16_t BidPrice2;
     uint16_t BidSize2;
-    uint16_t AskPrice2;
+    int16_t AskPrice2;
     uint16_t AskSize2;
 } ShortBestBidAndAskUpdateMessageT;
 
@@ -210,7 +210,7 @@ typedef struct {
     uint8_t ExpirationYear;
     uint8_t ExpirationMonth;
     uint8_t ExpirationDay;
-    uint32_t StrikePrice;
+    int32_t StrikePrice;
     char OptionType;
     uint8_t Source;
     char UnderlyingSymbol[13];

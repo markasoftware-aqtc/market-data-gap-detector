@@ -1,5 +1,5 @@
 /*******************************************************************************
- * C Structs For Cme Futures Sbe Streamlined 5.8 protocol
+ * C Structs For Cme Futures Sbe Streamlined 5.8 Binary Model
  *******************************************************************************/
 
 /*******************************************************************************
@@ -9,76 +9,76 @@
 /*
  * Aggressor Side Values
  */ 
-#define ENUM_AGGRESSOR_SIDE_NO_VALUE = 255
-#define ENUM_AGGRESSOR_SIDE_NO_AGGRESSOR = 0
-#define ENUM_AGGRESSOR_SIDE_BUY = 1
-#define ENUM_AGGRESSOR_SIDE_SELL = 2
+#define ENUM_AGGRESSOR_SIDE_NO_VALUE 255
+#define ENUM_AGGRESSOR_SIDE_NO_AGGRESSOR 0
+#define ENUM_AGGRESSOR_SIDE_BUY 1
+#define ENUM_AGGRESSOR_SIDE_SELL 2
 
 /*
  * Event Type Indices Values
  */ 
-#define ENUM_EVENT_TYPE_INDICES_ACTIVATION = 5
-#define ENUM_EVENT_TYPE_INDICES_DELETION = 6
-#define ENUM_EVENT_TYPE_INDICES_MODIFICATION = 120
+#define ENUM_EVENT_TYPE_INDICES_ACTIVATION 5
+#define ENUM_EVENT_TYPE_INDICES_DELETION 6
+#define ENUM_EVENT_TYPE_INDICES_MODIFICATION 120
 
 /*
  * Md Entry Code Values
  */ 
-#define ENUM_MD_ENTRY_CODE_NO_VALUE = 255
-#define ENUM_MD_ENTRY_CODE_INDICATIVE = 1
-#define ENUM_MD_ENTRY_CODE_PRE_MARKET = 2
-#define ENUM_MD_ENTRY_CODE_PRELIMINARY_CLOSE = 3
-#define ENUM_MD_ENTRY_CODE_SESSION_CLOSE = 4
-#define ENUM_MD_ENTRY_CODE_CLOSE = 5
+#define ENUM_MD_ENTRY_CODE_NO_VALUE 255
+#define ENUM_MD_ENTRY_CODE_INDICATIVE 1
+#define ENUM_MD_ENTRY_CODE_PRE_MARKET 2
+#define ENUM_MD_ENTRY_CODE_PRELIMINARY_CLOSE 3
+#define ENUM_MD_ENTRY_CODE_SESSION_CLOSE 4
+#define ENUM_MD_ENTRY_CODE_CLOSE 5
 
 /*
  * Md Entry Type Indices Values
  */ 
-#define ENUM_MD_ENTRY_TYPE_INDICES_BID = '0'
-#define ENUM_MD_ENTRY_TYPE_INDICES_OFFER = '1'
-#define ENUM_MD_ENTRY_TYPE_INDICES_TRADE = '2'
-#define ENUM_MD_ENTRY_TYPE_INDICES_INDEX_VALUE = '3'
-#define ENUM_MD_ENTRY_TYPE_INDICES_OPENING_VALUE = '4'
-#define ENUM_MD_ENTRY_TYPE_INDICES_CLOSING_PRICE = '5'
-#define ENUM_MD_ENTRY_TYPE_INDICES_SETTLEMENT_PRICE = '6'
-#define ENUM_MD_ENTRY_TYPE_INDICES_SESSION_HIGH_PRICE = '7'
-#define ENUM_MD_ENTRY_TYPE_INDICES_SESSION_LOW_PRICE = '8'
-#define ENUM_MD_ENTRY_TYPE_INDICES_TRADE_VOLUME = 'e'
+#define ENUM_MD_ENTRY_TYPE_INDICES_BID '0'
+#define ENUM_MD_ENTRY_TYPE_INDICES_OFFER '1'
+#define ENUM_MD_ENTRY_TYPE_INDICES_TRADE '2'
+#define ENUM_MD_ENTRY_TYPE_INDICES_INDEX_VALUE '3'
+#define ENUM_MD_ENTRY_TYPE_INDICES_OPENING_VALUE '4'
+#define ENUM_MD_ENTRY_TYPE_INDICES_CLOSING_PRICE '5'
+#define ENUM_MD_ENTRY_TYPE_INDICES_SETTLEMENT_PRICE '6'
+#define ENUM_MD_ENTRY_TYPE_INDICES_SESSION_HIGH_PRICE '7'
+#define ENUM_MD_ENTRY_TYPE_INDICES_SESSION_LOW_PRICE '8'
+#define ENUM_MD_ENTRY_TYPE_INDICES_TRADE_VOLUME 'e'
 
 /*
  * Md Update Action Values
  */ 
-#define ENUM_MD_UPDATE_ACTION_NEW = 0
-#define ENUM_MD_UPDATE_ACTION_CHANGE = 1
-#define ENUM_MD_UPDATE_ACTION_DELETE = 2
-#define ENUM_MD_UPDATE_ACTION_DELETE_THRU = 3
-#define ENUM_MD_UPDATE_ACTION_DELETE_FROM = 4
-#define ENUM_MD_UPDATE_ACTION_OVERLAY = 5
+#define ENUM_MD_UPDATE_ACTION_NEW 0
+#define ENUM_MD_UPDATE_ACTION_CHANGE 1
+#define ENUM_MD_UPDATE_ACTION_DELETE 2
+#define ENUM_MD_UPDATE_ACTION_DELETE_THRU 3
+#define ENUM_MD_UPDATE_ACTION_DELETE_FROM 4
+#define ENUM_MD_UPDATE_ACTION_OVERLAY 5
 
 /*
  * Security Update Action Values
  */ 
-#define ENUM_SECURITY_UPDATE_ACTION_ADD = 'A'
-#define ENUM_SECURITY_UPDATE_ACTION_DELETE = 'D'
-#define ENUM_SECURITY_UPDATE_ACTION_MODIFY = 'M'
+#define ENUM_SECURITY_UPDATE_ACTION_ADD 'A'
+#define ENUM_SECURITY_UPDATE_ACTION_DELETE 'D'
+#define ENUM_SECURITY_UPDATE_ACTION_MODIFY 'M'
 
 /*
  * Template Id Values
  */ 
-#define ENUM_TEMPLATE_ID_ADMIN_HEARTBEAT = 312
-#define ENUM_TEMPLATE_ID_ADMIN_LOGIN = 315
-#define ENUM_TEMPLATE_ID_ADMIN_LOGOUT = 316
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS_REFERENCE_DATA_AND_DAILY_STATISTICS = 333
-#define ENUM_TEMPLATE_ID_MD_NEWS_INDICES = 339
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_BLOCKS = 340
-#define ENUM_TEMPLATE_ID_QUOTE_REQUEST = 345
-#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_INDICES = 347
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_INDICES = 348
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_BLOCKS = 349
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS = 351
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS = 353
-#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_OTC = 356
-#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_ERIS = 363
+#define ENUM_TEMPLATE_ID_ADMIN_HEARTBEAT 312
+#define ENUM_TEMPLATE_ID_ADMIN_LOGIN 315
+#define ENUM_TEMPLATE_ID_ADMIN_LOGOUT 316
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS_REFERENCE_DATA_AND_DAILY_STATISTICS 333
+#define ENUM_TEMPLATE_ID_MD_NEWS_INDICES 339
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_BLOCKS_340 340
+#define ENUM_TEMPLATE_ID_QUOTE_REQUEST 345
+#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_INDICES 347
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_INDICES 348
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_TRADE_BLOCKS_349 349
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS_351 351
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_ERIS_353 353
+#define ENUM_TEMPLATE_ID_MD_INCREMENTAL_REFRESH_OTC 356
+#define ENUM_TEMPLATE_ID_MD_INSTRUMENT_DEFINITION_ERIS 363
 
 
 /*******************************************************************************
@@ -350,13 +350,13 @@ typedef struct {
 } MDIncrementalRefreshEris353GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Eris 353
+ * Structure: Md Incremental Refresh Eris
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshEris353T;
+} MdIncrementalRefreshErisT;
 
 /*
  * Structure: M D Incremental Refresh Eris 351 Group
@@ -389,13 +389,13 @@ typedef struct {
 } MDIncrementalRefreshEris351GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Eris 351
+ * Structure: Md Incremental Refresh Eris No Quote
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessagesOptional;
-} MdIncrementalRefreshEris351T;
+} MdIncrementalRefreshErisNoQuoteT;
 
 /*
  * Structure: M D Incremental Refresh Trade Blocks 349 Group
@@ -440,14 +440,14 @@ typedef struct {
 } MDIncrementalRefreshTradeBlocks349GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Trade Blocks 349
+ * Structure: Md Incremental Refresh Trade Blocks
  */ 
 typedef struct {
     uint64_t TransactTimeOptional;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessages;
     uint16_t TradeDate;
-} MdIncrementalRefreshTradeBlocks349T;
+} MdIncrementalRefreshTradeBlocksT;
 
 /*
  * Structure: Percent Trading
@@ -600,13 +600,13 @@ typedef struct {
 } MDIncrementalRefreshTradeBlocks340GroupsT;
 
 /*
- * Structure: Md Incremental Refresh Trade Blocks 340
+ * Structure: Md Incremental Refresh Trade Blocks No Date
  */ 
 typedef struct {
     uint64_t TransactTime;
     MatchEventIndicatorT MatchEventIndicator;
     uint16_t BatchTotalMessages;
-} MdIncrementalRefreshTradeBlocks340T;
+} MdIncrementalRefreshTradeBlocksNoDateT;
 
 /*
  * Structure: Lines Of Text Group
